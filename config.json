@@ -1,0 +1,19 @@
+{
+  "settings": {
+    "delays": {
+      "general": 1,
+      "translation": 2,
+      "save": 3,
+      "webdriverWait": 5
+    },
+    "links": {
+      "login": "https://emosen.prativa.com.tr/login",
+      "translate": "https://translate.google.com/?hl=tr&sl=tr&tl=en",
+      "productEdit": "https://emosen.prativa.com.tr/panel/product/{id}/edit"
+    },
+    "idRange": {
+      "start": 830,
+      "end": 800
+    }
+  }
+}
