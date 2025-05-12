@@ -100,7 +100,7 @@ def setup_driver(driver_path):
 def login_to_website(driver, email, password):
     """Web sitesine giriş yapar."""
     try:
-        driver.get("https://emosen.prativa.com.tr/login")
+        driver.get("https://example.com")
         WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, "//input[@type='email']"))).send_keys(email)
         driver.find_element(By.XPATH, "//input[@type='password']").send_keys(password)
         driver.find_element(By.XPATH, "//button[@type='submit']").click()
@@ -130,7 +130,7 @@ def translate_html_text_preserve_tags(html_content, translate_func):
 
 def process_product(driver, product_id, delays, webdriver_wait):
     """Ürün bilgilerini işler ve çevirir."""
-    base_url = "https://emosen.prativa.com.tr/panel/product/{}/edit"
+    base_url = "https://https://example.com/panel/product/{}/edit"
     url = base_url.format(product_id)
     print(f"\nİşleniyor: {url}")
     driver.get(url)
@@ -254,12 +254,12 @@ def main():
         print("WebDriver başlatılamadı.")
         return
 
-    email = "inviva@inviva.com.tr"
-    password = "768549inv.stj."
+    email = "info@troxgen.com"
+    password = "root@1234"
 
     login_to_website(driver, email, password)
 
-    config_path = "c:\\Users\\İnviva Medya\\Desktop\\EH - Auto Translate\\config.json"
+    config_path = "config.json"
     delays, links, id_range = load_config(config_path)
 
     if delays is None or links is None or id_range is None:
