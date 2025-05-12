@@ -7,9 +7,9 @@
       "webdriverWait": 5
     },
     "links": {
-      "login": "https://emosen.prativa.com.tr/login",
+      "login": "https://example.com/login",
       "translate": "https://translate.google.com/?hl=tr&sl=tr&tl=en",
-      "productEdit": "https://emosen.prativa.com.tr/panel/product/{id}/edit"
+      "productEdit": "https://example.com/panel/product/{id}/edit"
     },
     "idRange": {
       "start": 830,
